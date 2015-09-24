@@ -1,0 +1,11 @@
+spring:
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: validate
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/ci_sample
+        username: ci_sample
+        password: ci_sample
+        driver-class-name: com.mysql.jdbc.Driver

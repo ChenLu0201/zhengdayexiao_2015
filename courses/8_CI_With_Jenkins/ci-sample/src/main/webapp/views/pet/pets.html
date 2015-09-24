@@ -1,0 +1,22 @@
+<br>
+<label>Search:</label>
+<input type="text" ng-model="search"/>
+
+<br/>
+<br/>
+<label>Pets:</label>
+<a href="#/pets/new">Add</a>
+
+<section>
+    <span>Name</span>
+    <span>Type</span>
+    <span>Gender</span>
+</section>
+<ul>
+    <li ng-repeat="pet in pets | filter : search">
+        <span><a href="#/pets/{{pet.id}}">{{pet.name}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>{{pet.type}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>{{pet.gender}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span><button ng-click="edit(pet.id)">Edit</button>&nbsp;<button ng-click="delete(pet.id)">Delete</button></span>
+    </li>
+</ul>

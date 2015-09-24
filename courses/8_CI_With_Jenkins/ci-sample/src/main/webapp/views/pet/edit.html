@@ -1,0 +1,21 @@
+<section>
+    <h3>Edit {{pet.name}} detail:</h3>
+    <ul>
+        <li>
+            <label>name:</label>
+            <input type="text" ng-model="pet.name" />
+        </li>
+        <li>
+            <label>gender:</label>
+            <select ng-model="pet.gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </li>
+        <li>
+            <label>type:</label>
+            <input type="text" ng-model="pet.type" />
+        </li>
+    </ul>
+    <button ng-click="update()">Confirm</button>
+</section>
