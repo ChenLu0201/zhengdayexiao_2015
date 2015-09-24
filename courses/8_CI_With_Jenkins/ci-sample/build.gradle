@@ -15,7 +15,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'org.flywaydb.flyway'
 
 jar {
-    baseName = 'angular-learn'
+    baseName = 'ci-sample'
     version =  '0.1.0'
 }
 
