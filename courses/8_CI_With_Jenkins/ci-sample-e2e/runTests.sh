@@ -2,7 +2,7 @@
 # Run E2E tests
 
 #install packages
-npm install
+# npm install
 
 #clear log
 rm -rf ss.log
@@ -11,7 +11,7 @@ rm -rf ss.log
 now=$(date +"%T")
 echo "start time : $now"
 ./node_modules/.bin/selenium-standalone start > ss.log &
-sleep 5s
+sleep 5
 now=$(date +"%T")
 echo "start time : $now"
 
