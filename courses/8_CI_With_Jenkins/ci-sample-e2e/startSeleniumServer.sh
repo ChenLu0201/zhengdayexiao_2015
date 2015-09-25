@@ -9,4 +9,4 @@ rm -rf ss.log
 
 #start selenium server
 ./node_modules/.bin/selenium-standalone start > ss.log &
-sleep 5s
+# sleep 5s

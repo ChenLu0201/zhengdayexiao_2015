@@ -8,7 +8,12 @@ npm install
 rm -rf ss.log
 
 #start selenium server
+now=$(date +"%T")
+echo "start time : $now"
 ./node_modules/.bin/selenium-standalone start > ss.log &
+sleep 5s
+now=$(date +"%T")
+echo "start time : $now"
 
 #run  jasmine tests
 ./node_modules/.bin/wdio wdio.conf.js
